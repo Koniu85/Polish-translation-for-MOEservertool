@@ -1,0 +1,4272 @@
+{
+	"list": [
+		{
+			"type": "tabs",
+			"label": "标签页布局",
+			"name": "帝国神话私服配置",
+			"remark": "",
+			"ownergame": "eeb186fe-f2cb-49a4-a274-e556cfbbb6eb",
+			"serverid": "",
+			"districtid": "",
+			"icon": "icon-tabs",
+			"options": {
+				"type": "line"
+			},
+			"tab": [
+				{
+					"tabid": "1",
+					"label": "Podstawowe Ustawienia",
+					"elements": [
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Nazwa Serwera",
+							"cmdname": "SessionName",
+							"remark": "Nazwa serwera: Nazwa serwera wyświetlana na liście serwerów",
+							"options": {
+								"defaultValue": "Mój Serwer Myth of Empier"
+							},
+							"model": "input_1630915831905",
+							"key": "input_1630915831905",
+							"elementid": "input_1630915831905",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Hasło Serwera",
+							"cmdname": "PrivateServerPassword",
+							"remark": "Hasło serwera: Jeśli hasło do serwera jest ustawione, musisz wprowadzić poprawne hasło, aby dołączyć do serwer",
+							"options": {
+								"defaultValue": ""
+							},
+							"model": "input_1630915901270",
+							"key": "input_1630915901270",
+							"elementid": "input_1630915901270",
+							"required": false,
+							"tabid": "1"
+						},
+						{
+							"type": "textarea",
+							"elementlabel": "多行文本框",
+							"elementtype": 9,
+							"label": "Opis serwera",
+							"cmdname": "Description",
+							"remark": "Opis serwera: Krótko przedstaw swój serwer, maksymalnie 100 znaków, bez łamania wierszy", 
+							"options": {
+								"minRows": 4,
+								"maxRows": 6,
+								"defaultValue": ""
+							},
+							"model": "textarea_1630915872269",
+							"key": "textarea_1630915872269",
+							"elementid": "textarea_1630915872269",
+							"required": false,
+							"tabid": "1"
+						},
+						{
+							"type": "select",
+							"elementtype": 2,
+							"label": "PVP=0 / PVE=1",
+							"cmdname": "GameServerPVPType",
+							"remark": "Dla trybu PVP wybierz 0 \\ Dla trybu PVE wybierz 1",
+							"icon": "icon-xiala",
+							"options": {
+								"defaultValue": "1",
+								"dynamicKey": "",
+								"dynamic": false,
+								"orivalue": [
+									{
+										"value": "0",
+										"label": "0"
+									},
+									{
+										"value": "1",
+										"label": "1"
+									}
+								]
+							},
+							"model": "select_1630930401116",
+							"key": "select_1630930401116",
+							"elementid": "select_1630930401116",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "slider",
+							"elementtype": 6,
+							"label": "Limit Graczy",
+							"cmdname": "MaxPlayers",
+							"remark": "Limit Graczy: Maksymalna liczba graczy, którzy mogą dołączyć do serwera. Zakres 1 - 100",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 100,
+								"min": 1,
+								"max": 100,
+								"stepvalue": 1
+							},
+							"model": "slider_1630919425252",
+							"key": "slider_1630919425252",
+							"elementid": "slider_1630919425252",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Ogłoszenia",
+							"cmdname": "NoticeSelfEnable",
+							"remark": "Wyślij ogłoszenie: Po dołączeniu gracz do serwera otrzyma on Twoje ogłoszenie",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": false
+							},
+							"model": "switch_1630919501018",
+							"key": "switch_1630919501018",
+							"elementid": "switch_1630919501018",
+							"required": false,
+							"needvalue": true,
+							"tabid": "1"
+						},
+						{
+							"type": "textarea",
+							"elementlabel": "多行文本框",
+							"elementtype": 9,
+							"label": "Treść ogłoszenia",
+							"cmdname": "NoticeSelfEnterServer",
+							"remark": "Treść ogłoszenia: Treść ogłoszenia wyświetlanej w górnej części ekranu po dołączeniu gracza do servwera, wprowadź bez łamania linii, brak limitu słów",
+							"icon": "icon-edit",
+							"options": {
+								"minRows": 4,
+								"maxRows": 6,
+								"defaultValue": ""
+							},
+							"model": "textarea_1630929928485",
+							"key": "textarea_1630929928485",
+							"elementid": "textarea_1630929928485",
+							"required": false,
+							"tabid": "1"
+						},
+						{
+							"type": "slider",
+							"elementtype": 6,
+							"label": "Poziom trudność gry",
+							"cmdname": "MapDifficultyRate",
+							"remark": "Poziom trudność gry: zwiększa siłę dzikich zwierząt i ludzkich NPC. Zakres 1 - 100",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 1,
+								"max": 100,
+								"stepvalue": 1
+							},
+							"model": "slider_1630930537354",
+							"key": "slider_1630930537354",
+							"elementid": "slider_1630930537354",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Użyj AntiCheatExpert",
+							"cmdname": "UseACE",
+							"remark": "Użyj AntiCheatExpert: Włącz program zapobiegający oszustwom, który może spowodować, że niektórzy gracze będą mieli przechwycone różne nieznane pliki i nie będą mogli wejść do gry.",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1631071790265",
+							"key": "switch_1631071790265",
+							"elementid": "switch_1631071790265",
+							"required": false,
+							"needvalue": false,
+							"tabid": "1"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Sieci Zewnętrzna",
+							"cmdname": "ForceSteamNet",
+							"remark": "Tryb Sieci: Umożliwia graczom z sieci zewnętrznych na dostęp do twojego serwera",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1631071790265",
+							"key": "switch_1631071790265",
+							"elementid": "switch_1631071790265",
+							"required": false,
+							"needvalue": false,
+							"tabid": "1"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Identyfikator serwera",
+							"cmdname": "ServerId",
+							"remark": "Identyfikator serwera: Wprowadź liczbe. Gdy ten sam host otwiera wiele serwerów, potrzebuje różnych identyfikatorów serwera, nie duplikuj ich. Zapis następuje po identyfikatorze serwera. Zmiana identyfikatora serwera spowoduje utratę zapisu. Nie zmieniaj identyfikatora serwera, jeśli istnieje już zapis serwera.",
+							"options": {
+								"defaultValue": "100"
+							},
+							"model": "input_1630930672494",
+							"key": "input_1630930672494",
+							"elementid": "input_1630930672494",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Identyfikator klastra",
+							"cmdname": "ClusterId",
+							"remark": "Identyfikator klastra: wiele serwerów jest reprezentowanych jako grupa serwerów o tym samym identyfikatorze grupy",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1"
+							},
+							"model": "input_1631007475298",
+							"key": "input_1631007475298",
+							"elementid": "input_1631007475298",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Port",
+							"cmdname": "Port",
+							"remark": "Port: Jeśli wiele serwerów jest włączonych na tym samym hoście, porty gry na każdym serwerze muszą być różne i nie mogą być takie same",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1188"
+							},
+							"model": "input_1631005245983",
+							"key": "input_1631005245983",
+							"elementid": "input_1631005245983",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Rcon Port",
+							"cmdname": "ShutDownServicePort",
+							"remark": "Rcon Port: Jeśli wiele serwerów jest włączonych przez ten sam host, każdy serwer musi mieć inny port nasłuchiwania serwera który nie może być taki sam jak port gry",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1288"
+							},
+							"model": "input_1631005454211",
+							"key": "input_1631005454211",
+							"elementid": "input_1631005454211",
+							"required": true,
+							"tabid": "1"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz Administratorów",
+							"cmdname": "bUseServerAdmin",
+							"remark": "Użyj Konta Administratorów: Jeśli jest włączone, określone konto ma uprawnienia Administracyjne",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1634630479905",
+							"key": "switch_1634630479905",
+							"elementid": "switch_1634630479905",
+							"required": false,
+							"needvalue": true,
+							"tabid": "1"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "SteamID Administracyjne(Steam 17-digit ID)",
+							"cmdname": "ServerAdminAccounts",
+							"remark": "Dodaj konto Administracyjne(Steam 17-digit ID): Wprowadź identyfikator konta, oddziel kolejne konta średnikami (;). Numer konta znajdziesz na https://store.mythofempires.com/userInfo jako (Account Digital ID)",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": ""
+							},
+							"model": "input_1634630537416",
+							"key": "input_1634630537416",
+							"elementid": "input_1634630537416",
+							"required": false,
+							"tabid": "1"
+						}
+					]
+				},
+				{
+					"tabid": "2",
+					"label": "Zaawansowane ustawienia",
+					"elements": [
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz Czat",
+							"cmdname": "bCanChat",
+							"remark": "Włącz Czat: Jeśli wyłączone, tylko Administratorzy mogą korzystać z Czatu gry",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630930814576",
+							"key": "switch_1630930814576",
+							"elementid": "switch_1630930814576",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz Czat Głosowy",
+							"cmdname": "bCanVoiceChat",
+							"remark": "Włącz Czat Głosowy: Jeśli wyłączone, tylko Administratorzy mogą korzystać z Czatu głosowego",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630930836143",
+							"key": "switch_1630930836143",
+							"elementid": "switch_1630930836143",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Pwiadomienia Wejścia/Wyjścia",
+							"cmdname": "NoticeAllEnable",
+							"remark": "Pwiadomienia Wejścia/Wyjścia: jeśli włączone, wszyscy gracze na serwerze zostaną powiadomieni, gdy gracz wejdzie lub opuści serwer",
+							"options": {
+								"defaultValue": false
+							},
+							"model": "switch_1630930859209",
+							"key": "switch_1630930859209",
+							"elementid": "switch_1630930859209",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Info o Wejściu",
+							"cmdname": "NoticeEnterServer",
+							"remark": "Treść Powiadomienia o Wejściu: Treść powiadomienia to treść powiadomienia wyświetlana po nazwie gracza kiedy ten dołącza do serwera",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "Dołączył do gry"
+							},
+							"model": "input_1630930893192",
+							"key": "input_1630930893192",
+							"elementid": "input_1630930893192",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Info o Wyjściu",
+							"cmdname": "NoticeLeaveServer",
+							"remark": "TTreść Powiadomienia o Wyjściu: Treść powiadomienia to treść powiadomienia wyświetlana po nazwie gracza kiedy ten opuści serwer",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "Opuścił gre"
+							},
+							"model": "input_1630930960080",
+							"key": "input_1630930960080",
+							"elementid": "input_1630930960080",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Interwał Zapisu(min)",
+							"cmdname": "SaveGameIntervalMinute",
+							"remark": "Interwał Zapisu Serwera(min): Określa co ile minut ma być dokonywany zapis serwera",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "10"
+							},
+							"model": "input_1630931016293",
+							"key": "input_1630931016293",
+							"elementid": "input_1630931016293",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz Rozpad",
+							"cmdname": "bUseDurable",
+							"remark": "Włącz Rozpad: Po wyłączeniu wszystkie przedmioty będa ulegać rozpadowi",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1634631358191",
+							"key": "switch_1634631358191",
+							"elementid": "switch_1634631358191",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Precyzyjne Celowanie",
+							"cmdname": "bRiderUseShooterMovingCheck",
+							"remark": "Precyzyjne Celowanie: Po wyłączeniu umożliwiaprecyzyjne celowanie podczas poruszania się i na jazdy wierzchowcu",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630931210508",
+							"key": "switch_1630931210508",
+							"elementid": "switch_1630931210508",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik Spawnu NPC",
+							"cmdname": "NpcSpawnMultiplier",
+							"remark": "Mnożnik Spawnu NPC: Im wyższa wartość, tym więcej NPC się pojawi. Nie przekraczaj 5 bo może spowodować zawieszenie serwera",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 1,
+								"max": 5,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1630931470303",
+							"key": "slider_1630931470303",
+							"elementid": "slider_1630931470303",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Mmonety na Start",
+							"cmdname": "InitCapitalCopper",
+							"remark": "Monety na Start: Miedziane monety otrzymywane po stworzeniu postaci",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "0"
+							},
+							"model": "input_1630931521605",
+							"key": "input_1630931521605",
+							"elementid": "input_1630931521605",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Utrata przedmiotów",
+							"cmdname": "bDeadCorpseCreateBag",
+							"remark": "Utrata przedmiotów: Jeśli wyłączone, przedmioty postaci nie spadają na ziemię, gdy umiera, ale po prostu znikają",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630931557759",
+							"key": "switch_1630931557759",
+							"elementid": "switch_1630931557759",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Stan Zranienia",
+							"cmdname": "bOpenWillDead",
+							"remark": "Stan Zranienia: Jeśli jest wyłączone, śmiertelne zranienie nie wyzwala stanu zranienia, ale natychmiastową śmierć ",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630931811800",
+							"key": "switch_1630931811800",
+							"elementid": "switch_1630931811800",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Ratunek (Wszyscy / Przyjaciele)",
+							"cmdname": "bAllCanRescue",
+							"remark": "bAllCanRescue: Po wyłączeniu, gdy gracz jest krytycznie ranny i umiera, tylko przyjaciele mogą go uratować",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630931843752",
+							"key": "switch_1630931843752",
+							"elementid": "switch_1630931843752",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Utrata Przedmiotów",
+							"cmdname": "bCanDropItem",
+							"remark": "Utrata Przedmiotów: Jeśli wyłączone, przedmioty nie mogą zostać utracone po śmierci",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630932145480",
+							"key": "switch_1630932145480",
+							"elementid": "switch_1630932145480",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Pokaż Efekt Krwi",
+							"cmdname": "bShowFleshPhysicialMaterialEffect",
+							"remark": "Pokaż Efekt Krwi: Po wyłączeniu efekty krwi nie będą się już pojawiać po zranieniu",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630932164198",
+							"key": "switch_1630932164198",
+							"elementid": "switch_1630932164198",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Wieże - saznse trafienia",
+							"cmdname": "AITurretTraceProjectileRatio",
+							"remark": "AITurretTraceProjectileRatio: 0-1 oznacza, że wieża ma 0%-100% szansy na trafienie wroga，-1 oznacza zignorowanie parametrów i użycie konfiguracji gry",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": -1,
+								"min": -1,
+								"max": 1,
+								"stepvalue": 0.01
+							},
+							"model": "slider_1630932585110",
+							"key": "slider_1630932585110",
+							"elementid": "slider_1630932585110",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Maks. liczba NPC",
+							"cmdname": "MaxActiveCharacterCountConfig",
+							"remark": "Maksymalna liczba postaci: Maksymalna łączna liczba graczy, wojowników, ludzkich NPC, zwierząt i pojazdów, które mogą istnieć na serwerze, 0 oznacza brak limitu",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "0"
+							},
+							"model": "input_1630998903597",
+							"key": "input_1630998903597",
+							"elementid": "input_1630998903597",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Maks. liczba struktur",
+							"cmdname": "MaxActiveStructureCountConfig",
+							"remark": "Maksymalna liczba struktur: Maksymalna liczba budynków, które mogą istnieć na serwerze, 0 oznacza brak limitu",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "0"
+							},
+							"model": "input_1630998928764",
+							"key": "input_1630998928764",
+							"elementid": "input_1630998928764",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik zużycia wytrzymałości",
+							"cmdname": "NormalReduceDurableMultiplier",
+							"remark": "Mnożnik zużycia wytrzymałości: Mnożnik zużycia przedmiotów i wyposażenia podczas atakowania/otrzymywania obrażeń/używania itp. (Zakres 0 - 1000)",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317861274",
+							"key": "slider_1635317861274",
+							"elementid": "slider_1635317861274",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 6,
+							"label": "Czas pozostania po wylogowaniu",
+							"cmdname": "SleepPlayerCharacterDestroyDays",
+							"remark": "Czas pozostania postaci po wylogowaniu: Po tym, jak gracz opóści serwer, postać pozostanie w na serwerze. Gdy czas po opuszczeniu serwera osiągnie określony czas, postać znika. Po ponownym przejściu w tryb online wymagany jest proces zmartwychwstania, jednostka = dni.",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 7,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 1
+							},
+							"model": "slider_1635318082915",
+							"key": "slider_1635318082915",
+							"elementid": "slider_1635318082915",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Adaptacja Trudnośći",
+							"cmdname": "bEnableServerLevel",
+							"remark": "Adaptacja Trudnośći: Jeśli ta opcja jest włączona, gracze z poziomami wyższymi niż poziom serwera są karani doświadczeniem, a gracze z poziomami niższymi niż poziom serwera są nagradzani doświadczeniem.",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630932164198",
+							"key": "switch_1630932164198",
+							"elementid": "switch_1630932164198",
+							"required": false,
+							"needvalue": true,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 7,
+							"label": "Wzrost Poziomu Trudnośći",
+							"cmdname": "ServerLevelAddMul",
+							"remark": "Wzrost Poziomu Trudnośći: Szybkość aktualizacji na poziomie serwera: Jeśli poziom serwera jest włączony, poziom serwera będzie się automatycznie zwiększał wraz z liczbą dni gry, a im wyższy wskaźnik aktualizacji, tym szybciej poziom serwera będzie wzrastał",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 10,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635318082915",
+							"key": "slider_1635318082915",
+							"elementid": "slider_1635318082915",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 7,
+							"label": "Mnożnik Odnawiania Sytości",
+							"cmdname": "FoodBuffValueMulti",
+							"remark": "Mnożnik Odnawiania Sytości: Ilość uczucia sytości przywracana przez jedzenie jest mnożona przez to",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635318082915",
+							"key": "slider_1635318082915",
+							"elementid": "slider_1635318082915",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 7,
+							"label": "Mnożnik Odnawiania Zdrowia",
+							"cmdname": "MedicineBuffValueMulti",
+							"remark": "Mnożnik Odnawiania Zdrowia: Ilość Zdrowia, którą lek może przywrócić, zostanie pomnożona przez to",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635318082915",
+							"key": "slider_1635318082915",
+							"elementid": "slider_1635318082915",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 7,
+							"label": "Szybkość Odnawiania Zdrowia i Sytości",
+							"cmdname": "ItemCDMulti",
+							"remark": "Szybkość Odnawiania Zdrowia i Sytości: Im wyższa wartość, tym krótszy czas odnowienia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635318082915",
+							"key": "slider_1635318082915",
+							"elementid": "slider_1635318082915",
+							"required": false,
+							"tabid": "2"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 7,
+							"label": "Mnożnik trwania wzmocnień",
+							"cmdname": "FoodMedicineWineBuffTimeMulti",
+							"remark": "Mnożnik trwania wzmocnień: Czas trwania wzmocnienia z jedzeniem, lekarstwami lub alkoholem jest mnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635318082915",
+							"key": "slider_1635318082915",
+							"elementid": "slider_1635318082915",
+							"required": false,
+							"tabid": "2"
+						}
+					]
+				},
+				{
+					"tabid": "3",
+					"label": "NPCs i Zwierzęta",
+					"elements": [
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szykość Oswajania",
+							"cmdname": "AddTameMulti",
+							"remark": "Szykość Oswajania: Wpływa na szybkość oswajania wierzchowców i rekrutowania wojowników. Zakres 1 - 1000",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 1,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1630999526472",
+							"key": "slider_1630999526472",
+							"elementid": "slider_1630999526472",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Zasięg przywołania",
+							"cmdname": "CallHorseDistance",
+							"remark": "Zasięg przywołania: naciśnij klawisz U, aby przywołać konia, 3000 to 30 metrów",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "6000"
+							},
+							"model": "input_1630999659399",
+							"key": "input_1630999659399",
+							"elementid": "input_1630999659399",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVE (zielona)",
+							"cmdname": "GeneralQualityMultiPVEGreen",
+							"remark": "Korekta jakości wojownika PVE (zielona): Korekta szansy, że jakość wojownika jest zielona. Im wyższa wartość, tym większe szanse na zielonych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804251798",
+							"key": "slider_1634804251798",
+							"elementid": "slider_1634804251798",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVE (niebieski)",
+							"cmdname": "GeneralQualityMultiPVEBlue",
+							"remark": "Korekta jakości wojownika PVE (niebieski): Korekta szansy, że jakość wojownika jest niebieska. Im wyższa wartość, tym większe szanse na niebieskich wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804352379",
+							"key": "slider_1634804352379",
+							"elementid": "slider_1634804352379",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVE (fioletowy)",
+							"cmdname": "GeneralQualityMultiPVEPurse",
+							"remark": "Korekta jakości wojownika PVE (fioletowy): Korekta szansy, że jakość wojownika jest fioletowa. Im wyższa wartość, tym większe szanse na fioletowych wojowników. Jednocześnie zmniejszy szanse na zdobycie wojowników o innych cechach, co ma wpływ tylko na serwer PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804377532",
+							"key": "slider_1634804377532",
+							"elementid": "slider_1634804377532",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVE (pomarańczowy)",
+							"cmdname": "GeneralQualityMultiPVEOrange",
+							"remark": "Korekta jakości wojownika PVE (pomarańczowy): Korekta szansy, że jakość wojownika jest pomarańczowa. Im wyższa wartość, tym większe szanse na pomarańczowych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804403263",
+							"key": "slider_1634804403263",
+							"elementid": "slider_1634804403263",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVE (czerwony)",
+							"cmdname": "GeneralQualityMultiPVERed",
+							"remark": "Korekta jakości wojownika PVE (czerwony): Korekta szansy, że jakość wojownika jest czerwona. Im wyższa wartość, tym większe szanse na czerwonych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.47,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804444029",
+							"key": "slider_1634804444029",
+							"elementid": "slider_1634804444029",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVP (zielona)",
+							"cmdname": "GeneralQualityMultiPVPGreen",
+							"remark": "Korekta jakości wojownika PVP (zielona): Korekta szansy, że jakość wojownika jest zielona. Im wyższa wartość, tym większe szanse na zielonych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804499122",
+							"key": "slider_1634804499122",
+							"elementid": "slider_1634804499122",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVP (niebieski)",
+							"cmdname": "GeneralQualityMultiPVPBlue",
+							"remark": "Korekta jakości wojownika PVP (niebieski): Korekta szansy, że jakość wojownika jest niebieska. Im wyższa wartość, tym większe szanse na niebieskich wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804519388",
+							"key": "slider_1634804519388",
+							"elementid": "slider_1634804519388",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVP (fioletowy)",
+							"cmdname": "GeneralQualityMultiPVPPurse",
+							"remark": "Korekta jakości wojownika PVP (fioletowy): Korekta szansy, że jakość wojownika jest fioletowa. Im wyższa wartość, tym większe szanse na fioletowych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804539597",
+							"key": "slider_1634804539597",
+							"elementid": "slider_1634804539597",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVP (pomarańczowy)",
+							"cmdname": "GeneralQualityMultiPVPOrange",
+							"remark": "Korekta jakości wojownika PVP (pomarańczowy): Korekta szansy, że jakość wojownika jest pomarańczowa. Im wyższa wartość, tym większe szanse na pomarańczowych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804558680",
+							"key": "slider_1634804558680",
+							"elementid": "slider_1634804558680",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Korekta jakości wojownika PVP (czerwony)",
+							"cmdname": "GeneralQualityMultiPVPRed",
+							"remark": "Korekta jakości wojownika PVP (czerwony): Korekta szansy, że jakość wojownika jest czerwona. Im wyższa wartość, tym większe szanse na czerwonych wojowników. Jednocześnie zmniejszy to szanse na zdobycie wojowników o innych cechach, co wpływa tylko na serwer PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1634804589668",
+							"key": "slider_1634804589668",
+							"elementid": "slider_1634804589668",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Max Jakość Wierzchowców PVP",
+							"cmdname": "HorseMaxQualityCorrection",
+							"remark": "Max Jakość Wierzchowców PVP: Maksymalna możliwa jakość wierzchowców (0 oznacza brak limitu). Jakość wpływa na wartość każdego atrybutu wierzchowca. Ten parametr dotyczy tylko serwera PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0,
+								"min": 0,
+								"max": 10,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631002496762",
+							"key": "slider_1631002496762",
+							"elementid": "slider_1631002496762",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Max Jakość Wierzchowców PVE",
+							"cmdname": "HorseMaxQualityCorrectionPVE",
+							"remark": "Max Jakość Wierzchowców PVE: Maksymalna możliwa jakość montowań (0 oznacza brak limitu). Jakość wpływa na wartość każdego atrybutu wierzchowca. Ten parametr wpływa tylko na serwer PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.8,
+								"min": 0,
+								"max": 10,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631003202728",
+							"key": "slider_1631003202728",
+							"elementid": "slider_1631003202728",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Wskaźnik życia dzikich zwierząt",
+							"cmdname": "WildAnimalLifeMultiplier",
+							"remark": "Wskaźnik życia dzikich zwierząt: maksymalna długość życia dzikich zwierząt zostanie pomnożona przez ten wskaźnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015287096",
+							"key": "slider_1631015287096",
+							"elementid": "slider_1631015287096",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik zadawanych obrażeń dzikich zwierząt",
+							"cmdname": "WildAnimalDamageMultiplier",
+							"remark": "Współczynnik zadawanych obrażeń dzikich zwierząt: Obrażenia wyrządzane przez dzikie zwierzęta zostaną pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015308994",
+							"key": "slider_1631015308994",
+							"elementid": "slider_1631015308994",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik otrzymywanych obrażeń dzikich zwierząt",
+							"cmdname": "WildAnimalBeInjuredMultiplier",
+							"remark": "Wild animal damage rate: Obrażenia otrzymywane przez dzikie zwierzęta zostaną pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015354479",
+							"key": "slider_1631015354479",
+							"elementid": "slider_1631015354479",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Wskaźnik Odnawiania życia dzikich zwierząt",
+							"cmdname": "WildAnimalLifeRecoveryMultiplier",
+							"remark": "Wskaźnik Odnawiania życia dzikich zwierząt: Gdy dzikie zwierzę automatycznie regeneruje życie, wartość, którą regeneruje za każdym razem, zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015370897",
+							"key": "slider_1631015370897",
+							"elementid": "slider_1631015370897",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik życia NPC",
+							"cmdname": "HumanoidLifeMultiplier",
+							"remark": "Mnożnik życia NPC: maksymalne życie ludzkich NPC zostanie pomnożone przez ten wskaźnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015668425",
+							"key": "slider_1631015668425",
+							"elementid": "slider_1631015668425",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń NPC",
+							"cmdname": "HumanoidDamageMultiplier",
+							"remark": "Mnożnik obrażeń NPC: Obrażenia zadawane przez ludzkich NPC zostaną pomnożone przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015688460",
+							"key": "slider_1631015688460",
+							"elementid": "slider_1631015688460",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń NPC",
+							"cmdname": "HumanoidBeInjuredMultiplier",
+							"remark": "Mnożnik obrażeń NPC: Obrażenia otrzymywane przez ludzkich NPC zostaną pomnożone przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015706029",
+							"key": "slider_1631015706029",
+							"elementid": "slider_1631015706029",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość Odnawiania życia NPC",
+							"cmdname": "HumanoidLifeRecoveryMultiplier",
+							"remark": "Szybkość Odnawiania życia NPC: Kiedy ludzki NPC automatycznie regeneruje życie, wartość, którą regeneruje, zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015719871",
+							"key": "slider_1631015719871",
+							"elementid": "slider_1631015719871",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Wskaźnik życia oswojonych zwierząt",
+							"cmdname": "TameAnimalLifeMultiplier",
+							"remark": "Wskaźnik życia oswojonych zwierząt: maksymalna długość życia oswojonych zwierząt (konie, słonie itp.) zostanie pomnożona przez ten wskaźnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015750322",
+							"key": "slider_1631015750322",
+							"elementid": "slider_1631015750322",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń oswojonych zwierząt",
+							"cmdname": "TameAnimalDamageMultiplier",
+							"remark": "Mnożnik obrażeń oswojonych zwierząt: Obrażenia spowodowane przez oswojone zwierzęta (konie, słonie itp.) zostaną pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015771980",
+							"key": "slider_1631015771980",
+							"elementid": "slider_1631015771980",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik przyjmowania obrażeń dla oswojonych zwierząt",
+							"cmdname": "TameAnimalBeInjuredMultiplier",
+							"remark": "Mnożnik obrażeń dla oswojonych zwierząt: Obrażenia otrzymywane przez oswojone zwierzęta (konie, słonie itp.) zostaną pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015788558",
+							"key": "slider_1631015788558",
+							"elementid": "slider_1631015788558",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość regeneracji życia oswojonych zwierząt",
+							"cmdname": "TameAnimalLifeRecoveryMultiplier",
+							"remark": "Szybkość regeneracji życia oswojonych zwierząt: Gdy oswojone zwierzęta (konie, słonie itp.) automatycznie regenerują życie, wartość każdego powrotu do zdrowia zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015846612",
+							"key": "slider_1631015846612",
+							"elementid": "slider_1631015846612",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik życia wojownika",
+							"cmdname": "GeneralLifeMultiplier",
+							"remark": "Mnożnik życia wojownika: Maksymalne życie wojowników zostanie pomnożone przez ten wskaźnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015867878",
+							"key": "slider_1631015867878",
+							"elementid": "slider_1631015867878",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń wojownika",
+							"cmdname": "GeneralDamageMultiplier",
+							"remark": "Mnożnik obrażeń wojownika: Obrażenia zadawane przez wojowników zostaną pomnożone przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015887137",
+							"key": "slider_1631015887137",
+							"elementid": "slider_1631015887137",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik otrzymywanych obrażeń przez wojownika",
+							"cmdname": "GeneralBeInjuredMultiplier",
+							"remark": "Mnożnik otrzymywanych obrażeń przez wojownika: Obrażenia wojowników zostaną pomnożone przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015908194",
+							"key": "slider_1631015908194",
+							"elementid": "slider_1631015908194",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość Odnawiania życia wojowników",
+							"cmdname": "GeneralLifeRecoveryMultiplier",
+							"remark": "Szybkość Odnawiania życia wojowników: Kiedy wojownik automatycznie przywraca życie, wartość, którą przywraca za każdym razem, zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631015921828",
+							"key": "slider_1631015921828",
+							"elementid": "slider_1631015921828",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik Udźwigu Gracza",
+							"cmdname": "GeneralLoadMultiplier",
+							"remark": "Mnożnik Udźwigu Gracza: Limit udźwigu gracza zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016454638",
+							"key": "slider_1631016454638",
+							"elementid": "slider_1631016454638",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik Udźwigu Wózeka",
+							"cmdname": "MoveSeatLoadMultiplier",
+							"remark": "Mnożnik Udźwigu Wózeka: Limit udźwigu wózka zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016454638",
+							"key": "slider_1631016454638",
+							"elementid": "slider_1631016454638",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik zapełnienia oswojonych zwierzą",
+							"cmdname": "TameAnimalSatietyMultiplier",
+							"remark": "Współczynnik zapełnienia oswojonych zwierząt: maksymalne zapełnienie oswojonych zwierząt (konie, słonie itp.) zostanie pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016005566",
+							"key": "slider_1631016005566",
+							"elementid": "slider_1631016005566",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Zmniejszenie wskaźnika pełności oswojonych zwierząt",
+							"cmdname": "TameAnimalDeclineOfSatietyMultiplier",
+							"remark": "Zmniejszenie wskaźnika pełności oswojonych zwierząt: Wartość utraty oswojonych zwierząt (konie, słonie itp.) zostanie pomnożona przez ten współczynnik, zmniejszenie tej wartości może spowolnić tempo spadku",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016027544",
+							"key": "slider_1631016027544",
+							"elementid": "slider_1631016027544",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik obciążenia oswojonego zwierzęcia",
+							"cmdname": "TameAnimalLoadMultiplier",
+							"remark": "Współczynnik obciążenia oswojonego zwierzęcia: Maksymalna waga oswojonego zwierzęcia (konia, słonia itp.) zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016454638",
+							"key": "slider_1631016454638",
+							"elementid": "slider_1631016454638",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik wytrzymałości oswojonych zwierząt",
+							"cmdname": "TameAnimalBodyStrengthMultiplier",
+							"remark": "Współczynnik wytrzymałości oswojonych zwierząt: maksymalna wytrzymałość oswojonych zwierząt (konie, słonie itp.) zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016479289",
+							"key": "slider_1631016479289",
+							"elementid": "slider_1631016479289",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik życia oswojonych zwierząt",
+							"cmdname": "TameAnimalLifeCountMultiplier",
+							"remark": "Współczynnik życia oswojonych zwierząt: początkowa długość życia oswojonych zwierząt (konie, słonie itp.) zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016495362",
+							"key": "slider_1631016495362",
+							"elementid": "slider_1631016495362",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik życia oswojonych zwierząt odliczonych od śmierci",
+							"cmdname": "TameAnimalDeathReduceLifeCountMultiplier",
+							"remark": "Współczynnik życia oswojonych zwierząt odliczonych od śmierci: Oswojone zwierzęta (konie, słonie itp.) Odliczenia siły życiowej zostaną pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016513796",
+							"key": "slider_1631016513796",
+							"elementid": "slider_1631016513796",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Odliczenie życia od śmierci oswojonych wojowników",
+							"cmdname": "TameGeneralDeathReduceLifeCountMultiplier",
+							"remark": "Odliczenie życia od śmierci oswojonych wojowników: Odliczenia siły życiowej oswojonych wojowników zostaną pomnożone przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631016513796",
+							"key": "slider_1631016513796",
+							"elementid": "slider_1631016513796",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość poruszania się oswojonych stworzeń",
+							"cmdname": "TameAnimalSpeedMultiplier",
+							"remark": "Szybkość poruszania się oswojonych stworzeń: Szybkość poruszania się oswojonych zwierząt (koni, słoni itp.) zostanie pomnożona przez ten współczynnik. Nie zaleca się ustawiania zbyt wysoko",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631017639502",
+							"key": "slider_1631017639502",
+							"elementid": "slider_1631017639502",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo spadku odporności na ciepło u zwierząt",
+							"cmdname": "TameAnimalHeatResistanceMultiplier",
+							"remark": "Tempo spadku odporności na ciepło u zwierząt: wpływa na tempo spadku ochrony, im wyższe tempo, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631067495084",
+							"key": "slider_1631067495084",
+							"elementid": "slider_1631067495084",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Zmniejszenie prędkości odporności na zimno u zwierząt",
+							"cmdname": "TameAnimalColdResistanceMultiplier",
+							"remark": "Zmniejszenie prędkości odporności na zimno u zwierząt: wpływa na tempo spadku ochrony, im wyższy wskaźnik, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631102192522",
+							"key": "slider_1631102192522",
+							"elementid": "slider_1631102192522",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Zmniejszenie prędkości odporności na miazmę zwierząt",
+							"cmdname": "TameAnimalPoisonResistanceMultiplier",
+							"remark": "Zmniejszenie prędkości odporności na miazmę zwierząt: wpływa na tempo spadku ochrony, im wyższy wskaźnik, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631102597438",
+							"key": "slider_1631102597438",
+							"elementid": "slider_1631102597438",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo spadku odporności wojowników",
+							"cmdname": "TameGeneralHeatResistanceMultiplier",
+							"remark": "Tempo spadku odporności wojowników: wpływa na tempo spadku ochrony, im wyższe tempo, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631102876692",
+							"key": "slider_1631102876692",
+							"elementid": "slider_1631102876692",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość spadku odporności na zimno u wojowników",
+							"cmdname": "TameGeneralColdResistanceMultiplier",
+							"remark": "Szybkość spadku odporności na zimno u wojowników: wpływa na tempo spadku ochrony, im wyższe tempo, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631102927128",
+							"key": "slider_1631102927128",
+							"elementid": "slider_1631102927128",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Odporność na miazmę wojownika Zmniejsza prędkość",
+							"cmdname": "TameGeneralPoisonResistanceMultiplier",
+							"remark": "Odporność na miazmę wojownika Zmniejsza prędkość: Wpływa na tempo spadku ochrony, im wyższa wartość, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103016963",
+							"key": "slider_1631103016963",
+							"elementid": "slider_1631103016963",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik odzysku odporności na ciepło wojownika",
+							"cmdname": "GeneralHeatResistanceRecover",
+							"remark": "Mnożnik odzysku odporności na ciepło wojownika: Za każdym razem, gdy wojownik odzyskuje odporność na ciepło, odzyskana wartość zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.17,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317800964",
+							"key": "slider_1635317800964",
+							"elementid": "slider_1635317800964",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik regeneracji odporności na zimno wojownika",
+							"cmdname": "GeneralColdResistanceRecover",
+							"remark": "Mnożnik regeneracji odporności na zimno wojownika: Za każdym razem, gdy wojownik odzyskuje odporność na zimno, odzyskana wartość zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.17,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317821077",
+							"key": "slider_1635317821077",
+							"elementid": "slider_1635317821077",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik regeneracji odporności na miazmat wojownik",
+							"cmdname": "GeneralPoisonResistanceRecover",
+							"remark": "Mnożnik regeneracji odporności na miazmat wojownika: Za każdym razem, gdy wojownik odzyskuje odporność na miazmat, wartość, którą odzyskuje, zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.17,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317835669",
+							"key": "slider_1635317835669",
+							"elementid": "slider_1635317835669",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 6,
+							"label": "Początkowy limit rekrutacji wojowników:",
+							"cmdname": "NUM_AllGeneralMax",
+							"remark": "Początkowy limit rekrutacji wojowników: Ilu wojowników gracz może zrekrutować na początku, a liczbę tę można zwiększyć, poprawiając później umiejętności dowodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 5,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 1
+							},
+							"model": "slider_1631103347734",
+							"key": "slider_1631103347734",
+							"elementid": "slider_1631103347734",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 6,
+							"label": "Początkowy limit gry wojownikami:",
+							"cmdname": "NUM_WarGeneralMax",
+							"remark": "Początkowy limit gry wojownikami: Gracze mogą początkowo wprowadzić do bitwy kilku wojowników, a następnie zwiększyć ich liczbę, poprawiając ich umiejętności dowodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 1
+							},
+							"model": "slider_1631103379753",
+							"key": "slider_1631103379753",
+							"elementid": "slider_1631103379753",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz limit oswajania wierzchowców",
+							"cmdname": "bLimitTameHorseNum",
+							"remark": "Włącz limit oswajania wierzchowców: Po wyłączeniu nie ma limitu liczby wierzchowców, które gracz może oswoić",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630931280139",
+							"key": "switch_1630931280139",
+							"elementid": "switch_1630931280139",
+							"required": false,
+							"needvalue": true,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 6,
+							"label": "Początkowe wierzchowce, które można oswoić",
+							"cmdname": "NUM_AllHorseMax",
+							"remark": "Początkowe wierzchowce, które można oswoić: Maksymalna liczba wierzchowców, które gracz może oswoić na początku, a liczba ta może zostać zwiększona poprzez ulepszenie umiejętności oswajania w przyszłości",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 3,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 1
+							},
+							"model": "slider_1631103464003",
+							"key": "slider_1631103464003",
+							"elementid": "slider_1631103464003",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz limit wierzchowców",
+							"cmdname": "bLimitWarHorseNum",
+							"remark": "Włącz limit wierzchowców: Po wyłączeniu nie ma limitu liczby wierzchowców, którymi gracze mogą grać w tym samym czasie, a wierzchowce przechowywane w magazynie nie są liczone",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1630931424937",
+							"key": "switch_1630931424937",
+							"elementid": "switch_1630931424937",
+							"required": false,
+							"needvalue": true,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 6,
+							"label": "Początkowe wierzchowce grywalne",
+							"cmdname": "NUM_WarHorseMax",
+							"remark": "Początkowe wierzchowce grywalne: Gracze mogą rozpocząć grę z kilkoma wierzchowcami jednocześnie, a wierzchowce przechowywane w magazynie nie są liczone",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 4,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 1
+							},
+							"model": "slider_1631103493390",
+							"key": "slider_1631103493390",
+							"elementid": "slider_1631103493390",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Prędkość hodowli zwierząt",
+							"cmdname": "TameAnimalMatingSpeedMultiplier",
+							"remark": "Prędkość hodowli zwierząt: im wyższa prędkość, tym większa prędkość",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103542739",
+							"key": "slider_1631103542739",
+							"elementid": "slider_1631103542739",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Czas odnowienia hodowli zwierząt",
+							"cmdname": "TameAnimalMatingCDMultiplier",
+							"remark": "Czas odnowienia hodowli zwierząt: po zakończeniu jednej hodowli samce wejdą w okres odnowienia, im wyższy wskaźnik, tym dłuższy czas odnowienia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103749410",
+							"key": "slider_1631103749410",
+							"elementid": "slider_1631103749410",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo wzrostu dziecka",
+							"cmdname": "BabyAnimalGrowthRateMultiplier",
+							"remark": "Tempo wzrostu dziecka: im wyższe tempo, tym szybciej rosną młode zwierzęta",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103821850",
+							"key": "slider_1631103821850",
+							"elementid": "slider_1631103821850",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Wskaźnik spożycia pokarmu dla niemowląt",
+							"cmdname": "BabyAnimalFoodConsumptionRateMultiplier",
+							"remark": "Wskaźnik spożycia pokarmu dla niemowląt: im wyższy wskaźnik, tym szybsze spożycie pokarmu",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103858971",
+							"key": "slider_1631103858971",
+							"elementid": "slider_1631103858971",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik doświadczenia wojownika",
+							"cmdname": "GeneralExpMultiplier",
+							"remark": "Współczynnik doświadczenia wojownika: wpływa na szybkość zdobywania poziomów przez wojowników",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103886929",
+							"key": "slider_1631103886929",
+							"elementid": "slider_1631103886929",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik doświadczenia umiejętności wojownika",
+							"cmdname": "GeneralTalentExpMultiplier",
+							"remark": "Współczynnik doświadczenia umiejętności wojownika: wpływa na szybkość zdobywania poziomów przez wojowników",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631104007677",
+							"key": "slider_1631104007677",
+							"elementid": "slider_1631104007677",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Współczynnik wynagrodzenia wojownika",
+							"cmdname": "OneDayGeneralWagesMulti",
+							"remark": "Współczynnik wynagrodzenia wojownika: Dzienna płaca wymagana przez wojowników zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635229335031",
+							"key": "slider_1635229335031",
+							"elementid": "slider_1635229335031",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Współczynnik zużycia pełności Wojowników odczepianych",
+							"cmdname": "GeneralSeatWorkAddHungerMulti",
+							"remark": "Współczynnik zużycia pełności Wojowników odczepianych: Pełnia zużywana przez generała odczepiającego zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635229372907",
+							"key": "slider_1635229372907",
+							"elementid": "slider_1635229372907",
+							"required": false,
+							"tabid": "3"
+						}
+					]
+				},
+				{
+					"tabid": "4",
+					"label": "Zegary",
+					"elements": [
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik czasu tworzenia i naprawy:",
+							"cmdname": "ItemCraftRepairTimeMulti",
+							"remark": "Mnożnik czasu tworzenia i naprawy: Im mniejszy mnożnik, tym krótszy będzie czas tworzenia i naprawy.",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.01
+							},
+							"model": "slider_1635229372907",
+							"key": "slider_1635229372907",
+							"elementid": "slider_1635229372907",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas przechowywania zwłok",
+							"cmdname": "CharacterCorpseLifespan",
+							"remark": "Czas przechowywania zwłok: Czas, przez jaki zwłoki postaci pozostają w świecie gry po śmierci, w sekundach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "180"
+							},
+							"model": "input_1631153996675",
+							"key": "input_1631153996675",
+							"elementid": "input_1631153996675",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas przechowywania zwłok zwierząt",
+							"cmdname": "AnimalCorpseLifespan",
+							"remark": "Czas przechowywania zwłok zwierząt: Czas, przez jaki zwłoki zwierząt pozostają w świecie gry po śmierci, w sekundach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "600"
+							},
+							"model": "input_1631154016889",
+							"key": "input_1631154016889",
+							"elementid": "input_1631154016889",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas przechowywania grobu",
+							"cmdname": "DeathItemContainerLifeTime",
+							"remark": "Czas przechowywania grobu: Czas, przez jaki grób generowany po śmierci postaci pozostaje w świecie gry, w sekundach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1800"
+							},
+							"model": "input_1631154235872",
+							"key": "input_1631154235872",
+							"elementid": "input_1631154235872",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas przechowywania pakietu",
+							"cmdname": "DropItemContainerLifeTime",
+							"remark": "Czas przechowywania pakietu: Czas, przez jaki pakiet upuszczony po śmierci lub po odrzuceniu gracza pozostaje w świecie gry, w sekundach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1800"
+							},
+							"model": "input_1631154352958",
+							"key": "input_1631154352958",
+							"elementid": "input_1631154352958",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Niezwyciężony czas odrodzenia gracza",
+							"cmdname": "PlayerRespawnCantBeDamageTime",
+							"remark": "Niezwyciężony czas odrodzenia gracza: Okres niezwyciężoności po śmierci i odrodzeniu, w sekundach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "10"
+							},
+							"model": "input_1631154559867",
+							"key": "input_1631154559867",
+							"elementid": "input_1631154559867",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas odrodzenia po śmierci gracza",
+							"cmdname": "PlayerRespawnTime",
+							"remark": "Czas odrodzenia po śmierci gracza: Ile czasu zajmie odrodzenie po śmierci, w sekundach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "0"
+							},
+							"model": "input_1631154620114",
+							"key": "input_1631154620114",
+							"elementid": "input_1631154620114",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas morderstwa i kary śmierci",
+							"cmdname": "MurderRespawnTime",
+							"remark": "Czas morderstwa i kary śmierci: Po każdej śmierci czas odrodzenia zostanie wydłużony, ten parametr to łączny czas odrodzenia zabity przez innych graczy",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "5"
+							},
+							"model": "input_1631170853368",
+							"key": "input_1631170853368",
+							"elementid": "input_1631170853368",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Limit czasu za morderstwo i śmierć",
+							"cmdname": "MaxMurderRespawnTime",
+							"remark": "Limit czasu za morderstwo i śmierć: wiele zgonów w krótkim czasie, za każdym razem, gdy czas kary osiągnie górny limit",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "30"
+							},
+							"model": "input_1631170895517",
+							"key": "input_1631170895517",
+							"elementid": "input_1631170895517",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas skazania za morderstwo:",
+							"cmdname": "RecordLastDamageTimeSpan",
+							"remark": "Czas skazania za morderstwo: jeśli gracz został zaatakowany przez gracza w ciągu kilku sekund przed śmiercią, ta śmierć jest liczona jako śmierć w wyniku morderstwa",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "20"
+							},
+							"model": "input_1631170946380",
+							"key": "input_1631170946380",
+							"elementid": "input_1631170946380",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas przypadkowej kary śmierci",
+							"cmdname": "AccidentRespawnTime",
+							"remark": "Czas przypadkowej kary śmierci: Po każdej śmierci czas odrodzenia zostanie wydłużony, ten parametr to łączny czas odrodzenia osób, które nie zostały zabite przez innych graczy",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "5"
+							},
+							"model": "input_1631170872387",
+							"key": "input_1631170872387",
+							"elementid": "input_1631170872387",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Maksymalny czas kary za przypadkową śmierć",
+							"cmdname": "MaxAccidentRespawnTime",
+							"remark": "Maksymalny czas kary za przypadkową śmierć: Wiele zgonów w krótkim okresie czasu, za każdym razem, gdy czas kary osiągnie górną granicę",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "30"
+							},
+							"model": "input_1631170915920",
+							"key": "input_1631170915920",
+							"elementid": "input_1631170915920",
+							"required": false,
+							"tabid": "4"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas resetowania kary śmierci",
+							"cmdname": "RecordDeatheCountTimeSpan",
+							"remark": "Czas resetowania kary śmierci: Czas braku zgonów, po którym zostanie zresetowany czas kary",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "900"
+							},
+							"model": "input_1631170983679",
+							"key": "input_1631170983679",
+							"elementid": "input_1631170983679",
+							"required": false,
+							"tabid": "4"
+						}
+					]
+				},
+				{
+					"tabid": "5",
+					"label": "Ustawienia zasobów",
+					"elements": [
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Max. Drop-rate",
+							"cmdname": "CollectMaxMultiplier",
+							"remark": "Maksymalny mnożnik zbieranych surowców: Maksymalna liczba dropów dla wszystkich kolekcji",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 7.5,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171052149",
+							"key": "slider_1631171052149",
+							"elementid": "slider_1631171052149",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Drop-rate dzikich roślin PVP",
+							"cmdname": "CollectPlantMultiplier",
+							"remark": "Drop-rate dzikich roślin PVP: Im wyższy mnożnik, tym więcej produktów można uzyskać w jednym uderzeniu. Wpływa tylko na serwery PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1.5,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171052149",
+							"key": "slider_1631171052149",
+							"elementid": "slider_1631171052149",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Drop-rate dzikich roślin PVE",
+							"cmdname": "CollectPlantMultiplierPVE",
+							"remark": "Drop-rate dzikich roślin PVP: Im wyższy mnożnik, tym więcej produktów można uzyskać w jednym uderzeniu. Wpływa tylko na serwery PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171088018",
+							"key": "slider_1631171088018",
+							"elementid": "slider_1631171088018",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Drop-rate zwierząt PVP",
+							"cmdname": "CollectHunterMultiplier",
+							"remark": "Drop-rate zwierząt PVP: Im wyższy mnożnik, tym więcej produktów można uzyskać w jednym uderzeniu. Wpływa tylko na serwery PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1.5,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171127406",
+							"key": "slider_1631171127406",
+							"elementid": "slider_1631171127406",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Drop-rate zwierząt PVE",
+							"cmdname": "CollectHunterMultiplierPVE",
+							"remark": "Drop-rate zwierząt PVE: Im wyższy mnożnik, tym więcej produktów można uzyskać w jednym uderzeniu. Wpływa tylko na serwery PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171146700",
+							"key": "slider_1631171146700",
+							"elementid": "slider_1631171146700",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik Drop-u Kamienia PVP",
+							"cmdname": "CollectStoneMultiplier",
+							"remark": "Mnożnik Drop-u Kamienia PVP: Im wyższy mnożnik, tym więcej produktów można uzyskać w jednej kolekcji. Wpływa tylko na serwery PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1.5,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171646990",
+							"key": "slider_1631171646990",
+							"elementid": "slider_1631171646990",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik Drop-u Kamienia PVE",
+							"cmdname": "CollectStoneMultiplierPVE",
+							"remark": "Mnożnik Drop-u Kamienia PVE: Im wyższy mnożnik, tym więcej produktów można uzyskać w jednej kolekcji. Wpływa tylko na serwery PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171676121",
+							"key": "slider_1631171676121",
+							"elementid": "slider_1631171676121",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Czas odrodzenia dzikich roślin",
+							"cmdname": "CollectPlantRecoverMultiplier",
+							"remark": "Czas odrodzenia dzikich roślin: Mnożnik czasu odrodzenia dzikich roślin po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631171691819",
+							"key": "slider_1631171691819",
+							"elementid": "slider_1631171691819",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Czas odrodzenia kamienia",
+							"cmdname": "CollectStoneRecoverMultiplier",
+							"remark": "Czas odrodzenia kamienia: mnożnik czasu odrodzenia żródła po zebraniu kamienia, im wyższa wartość, tym dłuższy czas odrodzenia źródła",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242486837",
+							"key": "slider_1631242486837",
+							"elementid": "slider_1631242486837",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo wzrostu roślin",
+							"cmdname": "CropGrowthMultiplier",
+							"remark": "Tempo wzrostu roślin: Mnożnik tempa wzrostu roślin, im wyższa wartość, tym szybszy wzrost",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242513760",
+							"key": "slider_1631242513760",
+							"elementid": "slider_1631242513760",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik drop-u upraw",
+							"cmdname": "CropCollectMultiplier",
+							"remark": "Mnożnik drop-u upraw: Im wyższa wartość, tym większe zbiory",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242534562",
+							"key": "slider_1631242534562",
+							"elementid": "slider_1631242534562",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas aktualizacji statusu upraw",
+							"cmdname": "CropLandTickInterval",
+							"remark": "Czas aktualizacji statusu upraw: Uprawa odświeża swój status co kilka sekund",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "5"
+							},
+							"model": "input_1631242548262",
+							"key": "input_1631242548262",
+							"elementid": "input_1631242548262",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość zbierania",
+							"cmdname": "CollectDamageMultiplier",
+							"remark": "Szybkość zbierania: Im wyższa wartość, tym szybsze zbieranie",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242592544",
+							"key": "slider_1631242592544",
+							"elementid": "slider_1631242592544",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Drop-rate monet PVP",
+							"cmdname": "CapitalDropRatioPVP",
+							"remark": "Drop-rate monet PVP:  Mnożnik upuszczonych przez NPC monet po zabiciu, im wyższa wartość, tym więcej monet zostanie upuszczonych. Wpływa tylko na serwery PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1.5,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242617147",
+							"key": "slider_1631242617147",
+							"elementid": "slider_1631242617147",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Drop-rate monet PVE",
+							"cmdname": "CapitalDropRatioPVE",
+							"remark": "Drop-rate monet  PVE: Mnożnik upuszczonych przez NPC monet po zabiciu, im wyższa wartość, tym więcej monet zostanie upuszczonych. Wpływa tylko na serwery PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242631613",
+							"key": "slider_1631242631613",
+							"elementid": "slider_1631242631613",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się małych kamieni",
+							"cmdname": "PickStoneRefreshRate",
+							"remark": "Częstotliwość odradzania się małych kamieni: Mnożnik czasu odświeżania małych kamieni, które można podnieść bezpośrednio z ziemi, im wyższa wartość, tym dłuższy czas odświeżania",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242654819",
+							"key": "slider_1631242654819",
+							"elementid": "slider_1631242654819",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się gałęzi",
+							"cmdname": "PickWoodRefreshRate",
+							"remark": "Częstotliwość odradzania się gałęzi: Częstotliwość odradzania gałęzi, które można podnieść bezpośrednio z ziemi, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242671113",
+							"key": "slider_1631242671113",
+							"elementid": "slider_1631242671113",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się kamieni poziomu 1",
+							"cmdname": "StoneLv1RefreshRate",
+							"remark": "Częstotliwość odradzania się kamieni poziomu 1: Mnożnik czasu odrodzenia po zebraniu kamienia poziomu 1, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242717302",
+							"key": "slider_1631242717302",
+							"elementid": "slider_1631242717302",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się dużych kamieni poziomu 1",
+							"cmdname": "BigStoneLv1RefreshRate",
+							"remark": "Częstotliwość odradzania się dużych kamieni poziomu 1: Mnożnik czasu odrodzenia po zebraniu dużego kamienia poziomu 1, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242873023",
+							"key": "slider_1631242873023",
+							"elementid": "slider_1631242873023",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania małych kamieni poziomu 1",
+							"cmdname": "SmallStoneLv1RefreshRate",
+							"remark": "Częstotliwość odradzania małych kamieni poziomu 1: Mnożnik częstotliwości odradzania się kamienia poziomu 1 po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242882287",
+							"key": "slider_1631242882287",
+							"elementid": "slider_1631242882287",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się kamieni poziomu 2",
+							"cmdname": "StoneLv2RefreshRate",
+							"remark": "Częstotliwość odradzania się kamieni poziomu 2: mnożnik czasu odrodzenia po zebraniu kamieni poziomu 2, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242892320",
+							"key": "slider_1631242892320",
+							"elementid": "slider_1631242892320",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się kamieni poziomu 3",
+							"cmdname": "StoneLv3RefreshRate",
+							"remark": "Częstotliwość odradzania się kamieni poziomu 3: mnożnik czasu odrodzenia po zebraniu kamieni poziomu 3, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242900713",
+							"key": "slider_1631242900713",
+							"elementid": "slider_1631242900713",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się kamieni poziomu 4",
+							"cmdname": "StoneLv4RefreshRate",
+							"remark": "Częstotliwość odradzania się kamieni poziomu 4: mnożnik czasu odrodzenia po zebraniu kamieni poziomu 4, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242922748",
+							"key": "slider_1631242922748",
+							"elementid": "slider_1631242922748",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się drzewa poziomu 1",
+							"cmdname": "TreeLv1RefreshRate",
+							"remark": "Częstotliwość odradzania się drzewa poziomu 1: Mnożnik czasu odrodzenia drzewa poziomu 1 po jego zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242930197",
+							"key": "slider_1631242930197",
+							"elementid": "slider_1631242930197",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się drzewa poziomu 2",
+							"cmdname": "TreeLv2RefreshRate",
+							"remark": "Częstotliwość odradzania się drzewa poziomu 2: Mnożnik czasu odrodzenia drzewa poziomu 2 po jego zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242938377",
+							"key": "slider_1631242938377",
+							"elementid": "slider_1631242938377",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się drzewa poziomu 3",
+							"cmdname": "Treelv3RefreshRate",
+							"remark": "Częstotliwość odradzania się drzewa poziomu 3: Mnożnik czasu odrodzenia drzewa poziomu 3 po jego zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242946798",
+							"key": "slider_1631242946798",
+							"elementid": "slider_1631242946798",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się drzewa na 4 poziomie:",
+							"cmdname": "TreeLv4RefreshRate",
+							"remark": "Częstotliwość odradzania się drzewa na 4 poziomie: Mnożnik czasu odrodzenia 4-poziomowego drzewa po jego zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242964784",
+							"key": "slider_1631242964784",
+							"elementid": "slider_1631242964784",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się krzewów",
+							"cmdname": "BushRefreshRate",
+							"remark": "Częstotliwość odradzania się krzewów: Mnożnik czasu odradzania się krzewów po zebraniu, im wyższa wartość, tym dłuższy czas odradzania",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242978961",
+							"key": "slider_1631242978961",
+							"elementid": "slider_1631242978961",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się dużych krzaków",
+							"cmdname": "BigBushRefreshRate",
+							"remark": "Częstotliwość odradzania się dużych krzaków: Częstotliwość odradzania się dużych krzaków po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242987898",
+							"key": "slider_1631242987898",
+							"elementid": "slider_1631242987898",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się rzadkich krzaków",
+							"cmdname": "RareBushRefreshRate",
+							"remark": "Częstotliwość odradzania się rzadkich krzaków: Częstotliwość odradzania się rzadkich krzaków po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631242997763",
+							"key": "slider_1631242997763",
+							"elementid": "slider_1631242997763",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się rudy siarki",
+							"cmdname": "SulphurOreRefreshRate",
+							"remark": "Częstotliwość odradzania się rudy siarki: mnożnik czasu odrodzenia po zebraniu rudy siarki, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243005761",
+							"key": "slider_1631243005761",
+							"elementid": "slider_1631243005761",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się rudy",
+							"cmdname": "CoalOreRefreshRate",
+							"remark": "Częstotliwość odradzania się rudy: mnożnik czasu odrodzenia po zebraniu rudy, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243013745",
+							"key": "slider_1631243013745",
+							"elementid": "slider_1631243013745",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się rudy miedzi",
+							"cmdname": "CopperOreRefreshRate",
+							"remark": "Częstotliwość odradzania się rudy miedzi: mnożnik czasu odrodzenia po zebraniu rudy miedzi, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243022345",
+							"key": "slider_1631243022345",
+							"elementid": "slider_1631243022345",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się rudy żelaza",
+							"cmdname": "IronOreRefreshRate",
+							"remark": "Częstotliwość odradzania się rudy żelaza: mnożnik czasu odrodzenia po zebraniu rudy żelaza, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243030384",
+							"key": "slider_1631243030384",
+							"elementid": "slider_1631243030384",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania czarnego żelaza",
+							"cmdname": "DarkSteelOreRefreshRate",
+							"remark": "Częstotliwość odradzania czarnego żelaza: mnożnik czasu odrodzenia po zebraniu rudy czarnego żelaza, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243039146",
+							"key": "slider_1631243039146",
+							"elementid": "slider_1631243039146",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo odradzania się meteorytu",
+							"cmdname": "AerosiderdliteOreRefreshRate",
+							"remark": "Tempo odradzania się meteorytu: Mnożnik czasu odrodzenia po zebraniu meteorytu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243054483",
+							"key": "slider_1631243054483",
+							"elementid": "slider_1631243054483",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się jadeitu",
+							"cmdname": "JadeOreRefreshRate",
+							"remark": "Częstotliwość odradzania się jadeitu: mnożnik czasu odrodzenia po zebraniu jadeitu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243066052",
+							"key": "slider_1631243066052",
+							"elementid": "slider_1631243066052",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość odrodzenia kaolinu",
+							"cmdname": "KaolinOreRefreshRate",
+							"remark": "Szybkość odrodzenia kaolinu: mnożnik czasu odrodzenia po zebraniu kaolinu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243075149",
+							"key": "slider_1631243075149",
+							"elementid": "slider_1631243075149",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania gliny",
+							"cmdname": "WetMoundOreRefreshRate",
+							"remark": "Częstotliwość odradzania gliny: mnożnik czasu odrodzenia po zebraniu gliny, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243084933",
+							"key": "slider_1631243084933",
+							"elementid": "slider_1631243084933",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo odrodzenia Siarczku Arsenu",
+							"cmdname": "RealgarOraRefreshRate",
+							"remark": "Tempo odrodzenia Siarczku Arsenu: Tempo odrodzenia rudy Siarczku Arsenu po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243092632",
+							"key": "slider_1631243092632",
+							"elementid": "slider_1631243092632",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się soli",
+							"cmdname": "SaltOreRefreshRate",
+							"remark": "Częstotliwość odradzania się soli: mnożnik czasu odrodzenia po zebraniu soli, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243104991",
+							"key": "slider_1631243104991",
+							"elementid": "slider_1631243104991",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania saletry",
+							"cmdname": "SaltpeterOreRefreshRate",
+							"remark": "Częstotliwość odradzania saletry: mnożnik czasu odrodzenia po zebraniu saletry, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243113856",
+							"key": "slider_1631243113856",
+							"elementid": "slider_1631243113856",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się grochu",
+							"cmdname": "PeaRefreshRate",
+							"remark": "Częstotliwość odradzania się grochu: Mnożnik czasu odrodzenia dzikiego grochu po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243122434",
+							"key": "slider_1631243122434",
+							"elementid": "slider_1631243122434",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się lucerny",
+							"cmdname": "GoldenCauliflowerRefreshRate",
+							"remark": "Częstotliwość odradzania się lucerny:Mnożnik czasu odrodzenia po zebraniu dzikiej lucerny, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243130283",
+							"key": "slider_1631243130283",
+							"elementid": "slider_1631243130283",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się wiciokrzewu",
+							"cmdname": "HoneysucklesRefreshRate",
+							"remark": "Częstotliwość odradzania się wiciokrzewu: Szybkość odradzania się dzikiego wiciokrzewu po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243137598",
+							"key": "slider_1631243137598",
+							"elementid": "slider_1631243137598",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się Źeń-Szenia Fałszywego",
+							"cmdname": "NotoginsengRefreshRate",
+							"remark": "Częstotliwość odradzania się Źeń-Szenia Fałszywego: Szybkość odradzania się dzikiego wiciokrzewu po zebraniu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243144983",
+							"key": "slider_1631243144983",
+							"elementid": "slider_1631243144983",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się Redestu",
+							"cmdname": "PolygonumhydropiperRefreshRate",
+							"remark": "Częstotliwość odradzania się Redestu: mnożnik czasu odrodzenia po zebraniu dzikiego Redestu, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243152600",
+							"key": "slider_1631243152600",
+							"elementid": "slider_1631243152600",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania Szalotki",
+							"cmdname": "SandonionRefreshRate",
+							"remark": "Częstotliwość odradzania Szalotki: Mnożnik czasu odrodzenia po zebraniu dzikiej cebuli, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243161085",
+							"key": "slider_1631243161085",
+							"elementid": "slider_1631243161085",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się w Dzwonkowca kosmatego:",
+							"cmdname": "CodonopsisRefreshRate",
+							"remark": "Częstotliwość odradzania się w Dzwonkowca kosmatego: Mnożnik czasu odrodzenia po zebraniu dzikiego Dzwonkowca kosmatego, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243173383",
+							"key": "slider_1631243173383",
+							"elementid": "slider_1631243173383",
+							"required": false,
+							"tabid": "5"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Częstotliwość odradzania się Rozchodnika Smoczej Krwi",
+							"cmdname": "DragonbloodRefreshRate",
+							"remark": "Częstotliwość odradzania się Rozchodnika Smoczej Krwi: Mnożnik czasu odrodzenia po zebraniu Rozchodnika Smoczej Krwi, im wyższa wartość, tym dłuższy czas odrodzenia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243183544",
+							"key": "slider_1631243183544",
+							"elementid": "slider_1631243183544",
+							"required": false,
+							"tabid": "5"
+						}
+					]
+				},
+				{
+					"tabid": "6",
+					"label": "Ustawienia uszkodzeń",
+					"elements": [
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Wyłącz uszkodzenia",
+							"cmdname": "bCloseDamage",
+							"remark": "Wyłącz obrażenia: Jeśli obrażenia są wyłączone, żaden atak nie może spowodować obrażeń",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": false
+							},
+							"model": "switch_1631243238327",
+							"key": "switch_1631243238327",
+							"elementid": "switch_1631243238327",
+							"required": false,
+							"needvalue": true,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń wroga z dystansu",
+							"cmdname": "ShooterHostileDamageMultiplier",
+							"remark": "Mnożnik obrażeń wroga z dystansu: Mnożnik obrażeń wrogów używających ataków dystansowych",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243266258",
+							"key": "slider_1631243266258",
+							"elementid": "slider_1631243266258",
+							"required": false,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń wroga w zwarciu",
+							"cmdname": "MeleeHostileDamageMultiplier",
+							"remark": "Mnożnik obrażeń wroga w zwarciu: Mnożnik obrażeń wrogów stosujących ataki w zwarciu",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243290588",
+							"key": "slider_1631243290588",
+							"elementid": "slider_1631243290588",
+							"required": false,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń sojuszniczych z dystansu",
+							"cmdname": "ShooterFriendDamageMultiplier",
+							"remark": "Mnożnik obrażeń sojuszników na dystans: Mnożnik obrażeń sojuszników korzystających z ataków dystansowych",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243301557",
+							"key": "slider_1631243301557",
+							"elementid": "slider_1631243301557",
+							"required": false,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń sojuszników walczących w zwarciu",
+							"cmdname": "MeleeFriendDamageMultiplier",
+							"remark": "Mnożnik obrażeń sojuszników walczących w zwarciu: Mnożnik obrażeń sojuszników używających ataków wręcz",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243312110",
+							"key": "slider_1631243312110",
+							"elementid": "slider_1631243312110",
+							"required": false,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik uszkodzenia budynku",
+							"cmdname": "StructureDamageMultiplier",
+							"remark": "Mnożnik uszkodzeń budynku: Kiedy budynek zostanie uszkodzony, zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243330984",
+							"key": "slider_1631243330984",
+							"elementid": "slider_1631243330984",
+							"required": false,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Współczynnik uszkodzenia budynku",
+							"cmdname": "StructureReturnDamageMultiplier",
+							"remark": "Współczynnik uszkodzeń budynków: Kiedy budynek zadaje obrażenia, zostanie on pomnożony przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243339664",
+							"key": "slider_1631243339664",
+							"elementid": "slider_1631243339664",
+							"required": false,
+							"tabid": "6"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik obrażeń",
+							"cmdname": "FinalDamageMultiplier",
+							"remark": "Mnożnik obrażeń: Wszystkie obrażenia zostaną pomnożone przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243350386",
+							"key": "slider_1631243350386",
+							"elementid": "slider_1631243350386",
+							"required": false,
+							"tabid": "6"
+						}
+					]
+				},
+				{
+					"tabid": "7",
+					"label": "Ustawienia Gracza",
+					"elements": [
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik zdobytego EXP gracza",
+							"cmdname": "AddExpMultiplier",
+							"remark": "Mnożnik zdobytego EXP gracza: EXP zdobyty przez graczy zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243395733",
+							"key": "slider_1631243395733",
+							"elementid": "slider_1631243395733",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik EXO ze zbierania",
+							"cmdname": "PlayerCollectionExpMultiplier",
+							"remark": "Mnożnik EXO ze zbierania: EXP zdobyty przy zbieraniu zostanie pomnożone przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243410865",
+							"key": "slider_1631243410865",
+							"elementid": "slider_1631243410865",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik doświadczenia za zabicie NPC",
+							"cmdname": "PlayerKillMonstersExpMultiplier",
+							"remark": "Mnożnik doświadczenia za zabicie NPC: EXP zdobyty za zabicie NPC zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243418449",
+							"key": "slider_1631243418449",
+							"elementid": "slider_1631243418449",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Punkty rozpoczęcia receptur",
+							"cmdname": "InitDefaultCraftPerkPoint",
+							"remark": "Punkty receptury początkowej: Liczba punktów receptur, od której zaczynają się receptury. Dotyczy tylko receptur utworzonych po zmodyfikowaniu tej wartości.",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "0"
+							},
+							"model": "input_1631243902445",
+							"key": "input_1631243902445",
+							"elementid": "input_1631243902445",
+							"required": false,
+							"tabid": "8"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik życia gracza",
+							"cmdname": "PlayerLifeMultiplier",
+							"remark": "Mnożnik życia gracza: maksymalne zdrowie gracza zostanie pomnożone przez ten mnożniki",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243457422",
+							"key": "slider_1631243457422",
+							"elementid": "slider_1631243457422",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik wytrzymałości gracza",
+							"cmdname": "PlayerBodyStrengthMultiplier",
+							"remark": "Mnożnik wytrzymałości gracza: maksymalna wytrzymałość gracza zostanie pomnożona przez ten mnożniki",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243465910",
+							"key": "slider_1631243465910",
+							"elementid": "slider_1631243465910",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik sytości gracza",
+							"cmdname": "PlayerSatietyMultiplier",
+							"remark": "Mnożnik sytości gracza: maksymalna sytość gracza zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243474487",
+							"key": "slider_1631243474487",
+							"elementid": "slider_1631243474487",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik udźwigu gracza",
+							"cmdname": "PlayerLoadMultiplier",
+							"remark": "Mnożnik udźwigu gracza: Limit udżwigu gracza zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243482720",
+							"key": "slider_1631243482720",
+							"elementid": "slider_1631243482720",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik prędkości ruchu gracza",
+							"cmdname": "PlayerSpeedMultiplier",
+							"remark": "Mnożnik prędkości ruchu gracza: prędkość ruchu gracza zostanie pomnożona przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 10,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243490649",
+							"key": "slider_1631243490649",
+							"elementid": "slider_1631243490649",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik utraty sytości",
+							"cmdname": "HungryDecreaseMultiplier",
+							"remark": "Mnożnik utraty sytości: im wyższa wartość, tym gracz szybciej staje się głodny",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243507643",
+							"key": "slider_1631243507643",
+							"elementid": "slider_1631243507643",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik utraty wytrzymałości",
+							"cmdname": "SPDecreaseMultiplier",
+							"remark": "Mnożnik utraty wytrzymałości: im wyższa wartość, tym szybciej spada wytrzymałość gracza",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243539455",
+							"key": "slider_1631243539455",
+							"elementid": "slider_1631243539455",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Mnożnik EXP umiejętności",
+							"cmdname": "SkillExpMultiplier",
+							"remark": "Mnożnik EXP umiejętności: EXP zdobyty przez ćwiczenie umiejętności zostanie pomnożony przez ten mnożnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243551648",
+							"key": "slider_1631243551648",
+							"elementid": "slider_1631243551648",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Brak upuszczania przedmiotów po śmierci ale utrata wytrzymałości przedmiotów",
+							"cmdname": "bDeathOnlyReduceDurable",
+							"remark": "Brak upuszczania przedmiotów po śmierci ale utrata wytrzymałości przedmiotów: Po włączeniu gracze nie upuszczają przedmiotów po śmierci, ale wytrzymałość wszystkich przedmiotów zostanie pomniejszona o określony procent",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": false
+							},
+							"model": "switch_1631243581971",
+							"key": "switch_1631243581971",
+							"elementid": "switch_1631243581971",
+							"required": false,
+							"needvalue": true,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Utrata wytrzymałości przedmiotów na pasku skrótów po śmierci",
+							"cmdname": "BattleServerReduceShortCutDurablePercent",
+							"remark": "Utrata wytrzymałości przedmiotów na pasku skrótów po śmierci: Przedmioty na pasku skrótów nie są upuszczane po śmierci, ale spada ich wytrzymałość",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.1,
+								"min": 0,
+								"max": 1,
+								"stepvalue": 0.01
+							},
+							"model": "slider_1631243649187",
+							"key": "slider_1631243649187",
+							"elementid": "slider_1631243649187",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Utrata trwałości elementu w gnieździe wyposażenia po śmierci",
+							"cmdname": "BattleServerReduceEquipDurablePercent",
+							"remark": "Utrata trwałości elementu w gnieździe wyposażenia po śmierci: Elementy w gnieździe wyposażenia nie są upuszczane po śmierci, ale spada ich Wytrzymałość",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.1,
+								"min": 0,
+								"max": 1,
+								"stepvalue": 0.01
+							},
+							"model": "slider_1635228804447",
+							"key": "slider_1635228804447",
+							"elementid": "slider_1635228804447",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Utrata wytrzymałości przedmiotu plecaka po śmierci",
+							"cmdname": "BattleServerReduceInventoryDurablePercent",
+							"remark": "Utrata wytrzymałości przedmiotu plecaka po śmierci: Przedmioty plecaka nie są upuszczane po śmierci, ale spada ich wytrzymałość",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.1,
+								"min": 0,
+								"max": 1,
+								"stepvalue": 0.01
+							},
+							"model": "slider_1635228834778",
+							"key": "slider_1635228834778",
+							"elementid": "slider_1635228834778",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość odzyskiwania życia",
+							"cmdname": "PlayerLifeRecoverySpeedMultiplier",
+							"remark": "Szybkość odzyskiwania życia: mnoży wartość życia odzyskanego w czasie normalnego powrotu do zdrowia",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243693920",
+							"key": "slider_1631243693920",
+							"elementid": "slider_1631243693920",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Stamina recovery speed",
+							"cmdname": "PlayerStaminaRecoverySpeedMultiplier",
+							"remark": "Szybkość regeneracji wytrzymałości: mnoży wartość wytrzymałości odzyskanej w czasie normalnej regeneracji",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631243709769",
+							"key": "slider_1631243709769",
+							"elementid": "slider_1631243709769",
+							"required": false,
+							"tabid": "7"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość spadku odporności na ciepło gracza",
+							"cmdname": "PlayerHeatResistanceMultiplier",
+							"remark": "Szybkość spadku odporności na ciepło gracza: wpływa na szybkość spadku ochrony, im wyższa szybkość, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103056242",
+							"key": "slider_1631103056242",
+							"elementid": "slider_1631103056242",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość spadku odporności na zimno gracza",
+							"cmdname": "PlayerColdResistanceMultiplier",
+							"remark": "Szybkość spadku odporności na zimno gracza: wpływa na szybkość spadku ochrony, im wyższy szybkość, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103079225",
+							"key": "slider_1631103079225",
+							"elementid": "slider_1631103079225",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Tempo spadku odporności na miazmę gracza",
+							"cmdname": "PlayerPoisonResistanceMultiplier",
+							"remark": "Tempo spadku odporności na miazmę gracza: wpływa na tempo spadku ochrony, im wyższy spadek, tym szybszy spadek",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631103096211",
+							"key": "slider_1631103096211",
+							"elementid": "slider_1631103096211",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik odzysku odporności na ciepło gracza",
+							"cmdname": "PlayerHeatResistanceRecover",
+							"remark": "Mnożnik odzysku odporności na ciepło gracza: Za każdym razem, gdy gracz odzyskuje odporność na ciepło, wartość zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.17,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317575029",
+							"key": "slider_1635317575029",
+							"elementid": "slider_1635317575029",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik regeneracji odporności na zimno gracza",
+							"cmdname": "PlayerColdResistanceRecover",
+							"remark": "Mnożnik regeneracji odporności na zimno gracza: gdy gracz odzyskuje odporność na zimno, wartość zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.17,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317657446",
+							"key": "slider_1635317657446",
+							"elementid": "slider_1635317657446",
+							"required": false,
+							"tabid": "3"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik regeneracji odporności na miazmat gracza",
+							"cmdname": "PlayerPoisonResistanceRecover",
+							"remark": "Mnożnik regeneracji odporności na miazmat gracza: za każdym razem, gdy gracz odzyskuje odporność na miazmat, wartość zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 0.17,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317773321",
+							"key": "slider_1635317773321",
+							"elementid": "slider_1635317773321",
+							"required": false,
+							"tabid": "3"
+						}
+					]
+				},
+				{
+					"tabid": "8",
+					"label": "Ustawienia HUD",
+					"elements": [
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Wyświetl informacje o poziomie?",
+							"cmdname": "bShowLevelNameHUD",
+							"remark": "Wyświetl informacje o poziomie?: Wyłącz, aby ukryć informacje, takie jak poziom gracza itp.",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1631243812297",
+							"key": "switch_1631243812297",
+							"elementid": "switch_1631243812297",
+							"required": false,
+							"needvalue": true,
+							"tabid": "8"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Wyświetl odległość poziomu",
+							"cmdname": "OnlyShowLevelDistance",
+							"remark": "Wyświetl odległość poziomu: dotyczy tylko ikon poziomów nad głowami NPC, zacznie działać po włączeniu powyższego przełącznika, jednostka ma cm",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "3000"
+							},
+							"model": "input_1631243902445",
+							"key": "input_1631243902445",
+							"elementid": "input_1631243902445",
+							"required": false,
+							"tabid": "8"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Wyświetlaj odległość nazwy poziomu",
+							"cmdname": "ShowLevelNameDistance",
+							"remark": "Wyświetlaj odległość nazwy poziomu: dotyczy tylko informacji na pasku zdrowia NPC i graczy, zacznie działać dopiero po włączeniu powyższego przełącznika. Jednostka to cm",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1000"
+							},
+							"model": "input_1631243942378",
+							"key": "input_1631243942378",
+							"elementid": "input_1631243942378",
+							"required": false,
+							"tabid": "8"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Włącz wyświetlanie ikon",
+							"cmdname": "bUseFightBillboard",
+							"remark": "Włącz wyświetlanie ikon: Wyłącz, aby ukryć informacje, takie jak ikony gildii nad graczami",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1631244225272",
+							"key": "switch_1631244225272",
+							"elementid": "switch_1631244225272",
+							"required": false,
+							"needvalue": true,
+							"tabid": "8"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Wyświetlaj ikony domyślne",
+							"cmdname": "bShowDefaultBillboard",
+							"remark": "Wyświetlaj ikony domyślne: po włączeniu różne ikony ogólne będą wyświetlane tylko w zależności od tego, czy związek jest wrogi, czy nie, i nie będą wyświetlane żadne ikony niestandardowe",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": false
+							},
+							"model": "switch_1631244290016",
+							"key": "switch_1631244290016",
+							"elementid": "switch_1631244290016",
+							"required": false,
+							"needvalue": true,
+							"tabid": "8"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Wyświetlaj przyjazne ikony",
+							"cmdname": "bShowEnemyBillboard",
+							"remark": "Wyświetlaj przyjazne ikony: Wyłącz, aby ukryć ikony nad przyjaznymi postaciami",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1631244301248",
+							"key": "switch_1631244301248",
+							"elementid": "switch_1631244301248",
+							"required": false,
+							"needvalue": true,
+							"tabid": "8"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Odległość wyświetlania przyjaznych ikon",
+							"cmdname": "ShowBillboardDistance",
+							"remark": "Odległość wyświetlania przyjaznych ikon: Jak daleko będą wyświetlane ikony nad przyjaznymi postaciami, w centymetrach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "15000"
+							},
+							"model": "input_1631244254771",
+							"key": "input_1631244254771",
+							"elementid": "input_1631244254771",
+							"required": false,
+							"tabid": "8"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Wyświetlaj ikony wrogów",
+							"cmdname": "bShowFriendlyBillboard",
+							"remark": "Wyświetlaj ikony wrogów: Wyłącz, aby ukryć ikony nad postaciami wroga",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": true
+							},
+							"model": "switch_1631244314122",
+							"key": "switch_1631244314122",
+							"elementid": "switch_1631244314122",
+							"required": false,
+							"needvalue": true,
+							"tabid": "8"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Odległość wyświetlania ikon wroga",
+							"cmdname": "ShowEnemyBillboardDistance",
+							"remark": "Odległość wyświetlania ikon wroga: Jak daleko będą wyświetlane ikony nad postaciami wroga, w centymetrach ",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "15000"
+							},
+							"model": "input_1635228986585",
+							"key": "input_1635228986585",
+							"elementid": "input_1635228986585",
+							"required": false,
+							"tabid": "8"
+						}
+					]
+				},
+				{
+					"tabid": "9",
+					"label": "Ustawienia budynków",
+					"elements": [
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość rozpadu budynków PVP",
+							"cmdname": "OccupyDecayHPMultiplier",
+							"remark": "Szybkość rozpadu budynków PVP: Szybkość, z jaką budynek w naturalny sposób traci wytrzymałość, gdy nie jest chroniony przez znacznik granicy lub flagę terytorium osobistego. Ten parametr dotyczy tylko PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631244356923",
+							"key": "slider_1631244356923",
+							"elementid": "slider_1631244356923",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Szybkość rozpadu budynków PVE",
+							"cmdname": "OccupyDecayHPMultiplierPVE",
+							"remark": "Szybkość rozpadu budynków PVE: Szybkość, z jaką budynek w naturalny sposób traci wytrzymałość, gdy nie jest chroniony przez znacznik granicy lub flagę terytorium osobistego. Ten parametr dotyczy tylko PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631244556180",
+							"key": "slider_1631244556180",
+							"elementid": "slider_1631244556180",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Szybkość rozpadu na innym terytorium PvP",
+							"cmdname": "OccupyDecayHPInOtherAreaMultiplier",
+							"remark": "Szybkość rozpadu na innym terytorium PvP: Gdy budynek znajduje się w zasięgu ochrony innych znaczników granic gildii, może przyspieszyć swój rozpad. Ten parametr dotyczy tylko serwerów PVP",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317233665",
+							"key": "slider_1635317233665",
+							"elementid": "slider_1635317233665",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Szybkość rozpadu na innym terytorium PVE",
+							"cmdname": "OccupyDecayHPInOtherAreaMultiplierPVE",
+							"remark": "Szybkość rozpadu na innym terytorium PVE: Gdy budynek znajduje się w zasięgu ochrony innych znaczników granic gildii, może przyspieszyć swój rozpad. Ten parametr dotyczy tylko serwerów PVE",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 2,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317316697",
+							"key": "slider_1635317316697",
+							"elementid": "slider_1635317316697",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Baza budynku znacznika granicy PVP",
+							"cmdname": "OccupyBaseStructureNum",
+							"remark": "Baza budynku znacznika granicy PVP: Im więcej budynków w obrębie znacznika granicy, tym więcej zasobów należy zapewnić, aby utrzymać degradację budynku. To jest liczba podstawowa. Po przekroczeniu tej liczby zwiększa się ilość dostarczanych surowców. Ten parametr dotyczy tylko PVP",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "1000"
+							},
+							"model": "input_1631244620476",
+							"key": "input_1631244620476",
+							"elementid": "input_1631244620476",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Baza budynku znacznika granicy PVE",
+							"cmdname": "OccupyBaseStructureNumPVE",
+							"remark": "Baza budynku znacznika granicy PVE: Im więcej budynków w obrębie znacznika granicy, tym więcej zasobów należy zapewnić, aby utrzymać degradację budynku. To jest liczba podstawowa. Po przekroczeniu tej liczby zwiększa się ilość dostarczanych surowców. Ten parametr dotyczy tylko PVE",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "700"
+							},
+							"model": "input_1631244636214",
+							"key": "input_1631244636214",
+							"elementid": "input_1631244636214",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik leczenia przy tworzeniu budynku",
+							"cmdname": "StructureCreateHPMultiplier",
+							"remark": "Mnożnik leczenia przy tworzeniu budynku: Po wybudowaniu budynku jego wytrzymałość będzie stopniowo wzrastać od 0 do pełnej wartości, a trwałość każdego odnowienia zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317339155",
+							"key": "slider_1635317339155",
+							"elementid": "slider_1635317339155",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Regeneracja HP po naprawie budynku",
+							"cmdname": "StructureRepairHPMultiplier",
+							"remark": "Regeneracja HP po naprawie budynku: po naprawie budynku jego wytrzymałość będzie stopniowo się odnawiać, a trwałość każdego odnowienia zostanie pomnożona przez ten współczynnik",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317422740",
+							"key": "slider_1635317422740",
+							"elementid": "slider_1635317422740",
+							"required": false,
+							"tabid": "9"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值浮点",
+							"elementtype": 7,
+							"label": "Mnożnik produkcji zagród dla zwierząt",
+							"cmdname": "AnimalFarmDropMul",
+							"remark": "Mnożnik produkcji zagród dla zwierząt: Mnożnik naturalnej produkcji i śmierci zwierząt gospodarskich w kojcach dla zwierząt",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1635317422740",
+							"key": "slider_1635317422740",
+							"elementid": "slider_1635317422740",
+							"required": false,
+							"tabid": "9"
+						}
+					]
+				},
+				{
+					"tabid": "10",
+					"label": "Ustawienia Gildii",
+					"elements": [
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Wskaźnik aktywności gildii",
+							"cmdname": "ExpToGuildActivityPointMul",
+							"remark": "Wskaźnik aktywności gildii: Mnożnik osobistej aktywności zdobytej, gdy gracze w gildii zdobywają doświadczenie",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 4,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631244672576",
+							"key": "slider_1631244672576",
+							"elementid": "slider_1631244672576",
+							"required": false,
+							"tabid": "10"
+						},
+						{
+							"type": "slider",
+							"elementtype": 7,
+							"label": "Maksymalna aktywność gildii",
+							"cmdname": "MaxGuildActivityPointMul",
+							"remark": "Maksymalna aktywność gildii: Istnieje maksymalna ilość aktywności, jaką każdy gracz w gildii może zapewnić gildii dziennie, a im wyższy współczynnik, tym wyższa maksymalna",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 1,
+								"min": 0,
+								"max": 1000,
+								"stepvalue": 0.1
+							},
+							"model": "slider_1631244672576",
+							"key": "slider_1631244672576",
+							"elementid": "slider_1631244672576",
+							"required": false,
+							"tabid": "10"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas odnowienia nazwy gildii",
+							"cmdname": "GuildRenameCDHour",
+							"remark": "Czas odnowienia nazwy gildii: Odstęp między zmianami nazwy gildii, w godzinach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "168"
+							},
+							"model": "input_1631244692086",
+							"key": "input_1631244692086",
+							"elementid": "input_1631244692086",
+							"required": false,
+							"tabid": "10"
+						},
+						{
+							"type": "input",
+							"elementlabel": "单行输入框",
+							"elementtype": 8,
+							"label": "Czas odnowienia ikony gildii",
+							"cmdname": "GuildSetImageCDHour",
+							"remark": "Czas odnowienia ikony gildii: Odstęp czasu między zmianami ikony gildii, w godzinach",
+							"icon": "icon-write",
+							"options": {
+								"defaultValue": "24"
+							},
+							"model": "input_1635229227780",
+							"key": "input_1635229227780",
+							"elementid": "input_1635229227780",
+							"required": false,
+							"tabid": "10"
+						},
+						{
+							"type": "slider",
+							"elementlabel": "滑动数值整型",
+							"elementtype": 6,
+							"label": "Limit dziennej ochrony znacznika granicy",
+							"cmdname": "OccupyMaxProtectHour",
+							"remark": "Limit dziennej ochrony znacznika granicy: Maksymalna liczba godzin, którą można ustawić podczas ustawiania dziennego czasu ochrony na znaczniku granicy",
+							"icon": "icon-menu",
+							"options": {
+								"defaultValue": 20,
+								"min": 0,
+								"max": 24,
+								"stepvalue": 1
+							},
+							"model": "slider_1634801485089",
+							"key": "slider_1634801485089",
+							"elementid": "slider_1634801485089",
+							"required": false,
+							"tabid": "10"
+						},
+						{
+							"type": "switch",
+							"elementtype": 5,
+							"label": "Groby tylko dla gildii",
+							"cmdname": "PVEOnlySelfGuildPickUpDeathPackage",
+							"remark": "Groby tylko dla gildii: Dotyczy tylko serwerów PVE. Tylko członkowie gildii mogą zbierać przedmioty w grobach upuszczonych po śmierci gracza",
+							"icon": "icon-kaiguan3",
+							"options": {
+								"defaultValue": false
+							},
+							"model": "switch_1635229419527",
+							"key": "switch_1635229419527",
+							"elementid": "switch_1635229419527",
+							"required": false,
+							"needvalue": true,
+							"tabid": "10"
+						}
+					]
+				}
+			],
+			"key": "tabs_1630916598690",
+			"elementid": "tabs_1630916598690"
+		}
+	],
+	"config": {
+		"layout": "horizontal",
+		"labelCol": {
+			"xs": 4,
+			"sm": 4,
+			"md": 4,
+			"lg": 4,
+			"xl": 4,
+			"xxl": 4
+		},
+		"labelWidth": 200,
+		"labelLayout": "flex",
+		"wrapperCol": {
+			"xs": 18,
+			"sm": 18,
+			"md": 18,
+			"lg": 18,
+			"xl": 18,
+			"xxl": 18
+		},
+		"hideRequiredMark": false,
+		"customStyle": ""
+	}
+}
